@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(248, 244, 244);
+  border: 5px solid #0a0a0a;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hederSection{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding: 10px ;
+  color: #222222;
+  background-color: rgb(153, 174, 241);
+}
+
+.center ul li{
+  text-align: center;
+  list-style: none;
+  display: inline-flex;
+  margin: 0px 10px;
+}
+/* Remove border from left, center, search, and right sections */
+.left, .center, .search, .right {
+  flex: 4;
+  /* border: 1px solid #0a0a0a; */ /* Removed border */
+}
+.left{
+  flex: 3;
+  /* border: 1px solid #0a0a0a; */ /* Removed border */
+}
+
+.search {
+  flex: 2;
+
+}
+.search input{
+  width: 30rem ;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #0a0a0a;
+  margin-left: -20px;
+}
+ .title {
+  font-size: 1 rem;
+ }
+
+ .bannerBox {
+  width: 100%;
+  height: auto; /* Adjust height as needed */
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 10px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.bannerBox img {
+  width: 100%;
+  height: auto; /* Keeps aspect ratio */
+  object-fit: cover; /* Ensures the image covers the area */
+  max-height: 100px; /* Adjust max height if needed */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menImages{
+  display: flex;
+}
+
+.menImages img , .womenImages img ,.kidsImages img{
+  width: 240px;
+  height: 220;
+  object-fit: cover;
+  max-height: 100px;
+  margin: 1px;
 }
